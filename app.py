@@ -5,6 +5,8 @@ from moviepy.editor import VideoFileClip, concatenate_videoclips
 import whisper
 from ultralytics import YOLO
 
+os.system("pip install moviepy==1.0.3")
+
 # Load models
 @st.cache_resource
 def load_whisper_model():
